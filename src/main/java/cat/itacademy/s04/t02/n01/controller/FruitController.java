@@ -30,7 +30,7 @@ public class FruitController {
         service.deleteFruit(id);
     }
 
-    @GetMapping("/getOne{id}")
+    @GetMapping("/getOne/{id}")
     public Optional<Fruit> getOne(@PathVariable int id){
         return service.getFruitById(id);
     }
