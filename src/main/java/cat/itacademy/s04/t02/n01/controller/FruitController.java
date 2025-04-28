@@ -25,7 +25,7 @@ public class FruitController {
         return service.updateFruit(fruit);
     }
 
-    @DeleteMapping("/delete{id}")
+    @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable int id){
         service.deleteFruit(id);
     }
